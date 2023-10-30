@@ -20,7 +20,7 @@ const notesSchema = new Schema({
     },
     date: {
         type: Date,
-        require: Date.now
+        default: Date.now
     }
 })
 const note = mongoose.model("note", notesSchema);
